@@ -20,22 +20,13 @@ def set_seed(seed):
 set_seed(0)
 
 
-parser.add_argument('--bias',type=str,default="0.90033")
+parser.add_argument('--bias',type=str,default="0.90")
 args = parser.parse_args()
 global_b = args.bias
 num_train_perc = 3000
 num_val_perc = 1000
 num_test_perc = 1000
-
-if global_b == "0.40022" or global_b == "0.59922" or global_b == "0.90022":
-    nb_num = 2
-
-if global_b == "0.40033" or global_b == "0.59933" or global_b == "0.90033":
-    nb_num = 3
-    
-if global_b == "0.40044" or global_b == "0.59944" or global_b == "0.90044":
-    nb_num = 4
-
+nb_num=1
 
 def get_house(basis_type, nb_shapes=80, width_basis=8, feature_generator=None, m=3, draw=True):
     """ Synthetic Graph #5:
