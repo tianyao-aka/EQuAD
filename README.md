@@ -7,7 +7,7 @@ _Tianjun Yao, Yongqiang Chen, Zhenhao Chen, Kai Hu, Zhiqiang Shen, Kun Zhang_
 
 International Conference of Machine Learning 2024 (ICML2024)
 
-<div align=center><img src="./resources/framework.png" style="zoom:50%;" />
+<div align=center><img src="./model/framework.png" style="zoom:50%;" />
 </div>
 
 ## Environment
