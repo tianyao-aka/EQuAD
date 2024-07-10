@@ -50,9 +50,13 @@ For the three configurations in our paper, use the following `global_b` and `lab
 
 
 3. DrugOOD
+
+
 To use DrugOOD datasets, curate the datasets according to [DrugOOD Benchmark repo](https://github.com/tencent-ailab/DrugOOD) based on commit `eeb00b8da7646e1947ca7aec93041052a48bd45e`, After curating the datasets, put the corresponding json files under `data/DrugOOD/`. The processed json files are also provided at [this url](https://drive.google.com/file/d/1ngsoGmZtKd72ZSFZv3qeEjq9WClog7Ay/view?usp=sharing). You can unzip it and put it under `data/`.
 
 4. OGBG-Mol*
+
+
 To use OGBG datasets, install the ogb package and specify the `--dataset` argument.
 
 
