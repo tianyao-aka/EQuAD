@@ -91,42 +91,8 @@ torch.cuda.manual_seed(seed)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
-
-
-def write_results_to_file(fpath, n, s):
-    # Check if the directory exists, if not, create it
-    # fpath: 存放路径
-    # n: 文件名 （.txt结尾）
-    # s: 内容
-    if not os.path.exists(fpath):
-        try:
-            os.makedirs(fpath)
-        except:
-            pass
-
-    # Construct full file path
-    full_path = os.path.join(fpath, n)
-
-    # Open the file in write mode, which will create the file if it does not exist
-    # and overwrite it if it does. Then write the string to the file.
-    with open(full_path, 'w') as f:
-        f.write(s)
-
-
-
-result_fname = f"{args.dataset}/"
-if 'spmotif' in args.dataset.lower():
-    result_fname += f"basegnn_{args.base_gnn}_nlayers_{args.nlayers}_es_{args.early_stop_epochs}_penalty_{args.penalty}_gamma_{args.gamma}_seed_{args.seed}/"
-    result_dir = os.path.join(f"{args.ood_path}/equad/", result_fname, args.fname_str)
-else:
-    result_fname += f"basegnn_{args.base_gnn}_nlayers_{args.nlayers}_es_{args.early_stop_epochs}_penalty_{args.penalty}_gamma_{args.gamma}_seed_{args.seed}/"
-    result_dir = os.path.join(f"{args.ood_path}/equad/", result_fname, args.fname_str)
 args = vars(args)
 
-
-if os.path.exists(result_dir):
-    print (colored(f"Directory {result_dir} exists. Exiting.",'red'))
-    sys.exit()
 
 dataset_name = args['dataset']
 if 'drugood' in dataset_name.lower():
@@ -415,6 +381,5 @@ res = np.array([val_score,test_score])
 
 print ('best res:',res)
 
-save_numpy_array_to_file(res,result_dir,"val_test_metric")
 
 
