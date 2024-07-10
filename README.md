@@ -57,6 +57,20 @@ To use OGBG datasets, install the ogb package and specify the `--dataset` argume
 
 
 ## Running Script
+
+### Generate Spurious Embeddings
+
+The first step is to generate spurious embeddings using infomax. Here is an example of how to do it.
+
+
+```
+python infomax.py --dataset drugood_lbap_core_ec50_scaffold --hidden_dims 64 --num_layers 5 --batch_size 128 --device_id 0'
+```
+
+It will run MVGRL to generate spurious embeddings, and save it to `embeddingWritingPath`, which is specified in the script (line 230). Currently the spurious embeddings are saved for every 3 epochs (line 331). 
+
+### Run EQuAD
+
 Run `run_ood_equad.py` for training and evaluation for EQuAD. Here is an example.
 
 ```
