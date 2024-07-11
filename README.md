@@ -84,7 +84,7 @@ python run_ood_equad.py --dataset drugood_lbap_core_ec50_scaffold --nclass 2  --
 
 | Parameter | Description | Choices |
 | --- | --- | --- |
-| dataset | name of dataset | `SPMotif-0.40`, `drugood_lbap_core_ec50_scaffold`, `drugood_lbap_core_ec50_size`, `drugood_lbap_core_ec50_assay`, `drugood_lbap_core_ic50_scaffold`, `drugood_lbap_core_ic50_size`, `drugood_lbap_core_ic50_assay`,`ogbg-molbace`,`ogbg-molbbbp`.
+| dataset | name of dataset | `SPMotif-0.40(or 0.33,0.60,0.90)`, `drugood_lbap_core_ec50_scaffold`, `drugood_lbap_core_ec50_size`, `drugood_lbap_core_ec50_assay`, `drugood_lbap_core_ic50_scaffold`, `drugood_lbap_core_ic50_size`, `drugood_lbap_core_ic50_assay`,`ogbg-molbace`,`ogbg-molbbbp`.
 | nclass | number of classes | e.g., 3|
 | nhid | hidden dimension size | e.g., 64 |
 | edge_dim | dimensions of edge features | specify to be -1 if not using edge features |
