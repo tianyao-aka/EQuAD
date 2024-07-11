@@ -10,6 +10,12 @@ International Conference of Machine Learning 2024 (ICML2024)
 <div align=center><img src="./model/framework.png" style="zoom:50%;" />
 </div>
 
+
+## Poster
+
+<div align=center><img src="./model/icml24-equad-poster.png" style="zoom:80%;" />
+</div>
+
 ## Environment
 To run the code successfully, the following dependencies need to be installed:
 ```
