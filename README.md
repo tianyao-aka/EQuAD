@@ -40,7 +40,7 @@ python gen_struc.py --bias 0.90
 
 It will generate a SPMotif dataset with $bias=0.90$.
 
-P.S.: To generate datasets for SPMotif and Twp-piece graph, the numpy version must be speficied to 1.20.0, after loading the datasets in PyG, the numpy version should be upgraded to 1.24.0+.
+P.S.: To generate datasets for SPMotif and Twp-piece graph, the numpy version must be speficied to 1.20.0, after loading the datasets in PyG, the numpy version should be upgraded to 1.24.3.
 
 2. Two-piece graph
 
