@@ -103,10 +103,6 @@ python run_ood_equad.py --dataset drugood_lbap_core_ec50_scaffold --nclass 2  --
 | device | which GPU to use | - |
 
 
-## To Do
-
-This is a re-implementation to improve readability. For Two-piece graph datasets, we adopt a different loss function to directly reweight samples (See Appendix E in the paper). This loss function is not included in the code yet, and will be contained in future revision.
-
 ## Citation
 If you find our paper and repo useful, please cite our paper:
 
